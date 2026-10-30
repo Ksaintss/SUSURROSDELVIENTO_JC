@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías Susurros del Viento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/frontend/assets/css/styles.css">
+    <link rel="icon" href="/frontend/assets/img/logooo.ico">
+</head>
+<body>
+
+    <!-- Menú principal -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Susurros del viento</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Catálogo
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Destacados</a></li>
+                    <li><a class="dropdown-item" href="Todoslosarticulos.html">Todos los artículos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="articulospersonalizados.html">Pedidos personalizados</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="d-flex align-items-center gap-2">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button> 
+                </form>
+                <a class="link-primary ms-2" href="formulario.html" aria-label="Iniciar sesión / Contacto">
+                  <img src="/frontend/assets/img/button-removebg.png" alt="Botón de contacto" width="40" height="40">
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <!-- Carrusel -->
+      <section id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/frontend/assets/img/diseño1.png" class="d-block w-100" alt="Creación artesanal">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Creación Artesanal</h5>
+                  <p>Dedicación y creatividad en cada detalle, transformando la magia de Ghibli en artesanías únicas.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/frontend/assets/img/2.png" class="d-block w-100" alt="Magia de Totoro">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Magia de Totoro</h5>
+                  <p>La alegría de descubrir la magia de Totoro en una de nuestras piezas hechas a mano.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/frontend/assets/img/3.png" class="d-block w-100" alt="Nuestro taller">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Nuestro Taller</h5>
+                  <p>Un vistazo a nuestro taller, donde la pasión por el anime cobra vida en cada creación.</p>
+              </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <!-- Productos destacados -->
+      <section class="container my-5">
+          <div class="row text-center">
+              <div class="col-12 col-sm-4">
+                  <article class="card border-0 my-3">
+                      <img src="/frontend/assets/img/calcifer.webp" class="card-img-top w-75 mx-auto rounded-circle" alt="Artesanía de Calcifer">
+                      <div class="card-body">
+                        <h5 class="card-title">Calcifer, el fuego mágico</h5>
+                        <p class="card-text">Calcifer es el espíritu de fuego que da vida al Castillo Vagabundo.</p>
+                        <a href="#" class="btn btn-primary">Shop</a>
+                      </div>
+                  </article>
+              </div>
+              <div class="col-12 col-sm-4">
+                  <article class="card border-0 my-3">
+                      <img src="/frontend/assets/img/totoro.jpg" class="card-img-top w-75 mx-auto rounded-circle" alt="Artesanía de Totoro">
+                      <div class="card-body">
+                        <h5 class="card-title">Totoro, el guardián del bosque</h5>
+                        <p class="card-text">Totoro es un querido espíritu del bosque que representa la conexión con la naturaleza.</p>
+                        <a href="#" class="btn btn-primary">Shop</a>
+                      </div>
+                  </article>
+              </div>
+              <div class="col-12 col-sm-4">
+                  <article class="card border-0 my-3">
+                      <img src="/frontend/assets/img/princesakaguya.webp" class="card-img-top w-75 mx-auto rounded-circle" alt="Artesanía de San, Princesa Mononoke">
+                      <div class="card-body">
+                        <h5 class="card-title">San, la Princesa Mononoke</h5>
+                        <p class="card-text">San, conocida como la Princesa Mononoke, lucha por proteger el bosque y sus criaturas.</p>
+                        <a href="#" class="btn btn-primary">Shop</a>
+                      </div>
+                  </article>
+              </div>
+          </div>
+
+          <!-- Secciones informativas -->
+          <article class="card my-5 border-0">
+              <div class="row g-0 align-items-center">
+                 <div class="col-md-6">
+                  <div class="card-body">
+                    <h3 class="card-title">NUESTRAS INSTALACIONES</h3>
+                    <p class="card-text">Cada una de nuestras piezas toma forma en un espacio lleno de inspiración y dedicación. Nuestro taller está diseñado para capturar la esencia de Studio Ghibli, rodeado de herramientas y materiales que nos permiten crear cada detalle con precisión. Aquí, el ambiente artesanal cobra vida, transformando cada personaje en una obra única y especial.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="/frontend/assets/img/lugar.png" class="img-fluid rounded-3" alt="Fotografía del taller de instalaciones">
+                </div>
+              </div>
+          </article>
+          <hr>
+          <article class="card my-5 border-0">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-6">
+                  <img src="/frontend/assets/img/susuwatari.png" class="img-fluid rounded-3" alt="Figura de Susuwatari hecha a medida">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h3 class="card-title">HECHO A TU MEDIDA</h3>
+                    <p class="card-text">¿Tienes un personaje o escena de Studio Ghibli en mente? Ofrecemos piezas personalizadas para que lleves contigo exactamente lo que amas. Nos encantaría trabajar contigo para crear una artesanía única que represente tus recuerdos y emociones. Contáctanos y haz realidad tu idea.</p>
+                  </div>
+                </div>
+              </div>
+          </article>
+      </section>
+      
+      <!-- Llamado a la acción -->
+      <section class="p-5 text-center bg-body-tertiary">
+          <div class="container py-5">
+              <h2 class="text-body-emphasis">Contacta con nosotros y encuentra tu pieza perfecta</h2>
+              <p class="col-lg-8 mx-auto lead">
+                Desde consultas sobre productos hasta pedidos personalizados, estamos aquí para ayudarte en cada paso. ¡Envíanos un mensaje para hablar sobre todo lo que necesites!
+              </p>
+              <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <a href="#" class="btn btn-primary btn-lg">WHATSAPP</a>
+                <a href="formulario.html" class="btn btn-primary btn-lg">EMAIL</a>
+                <a href="#" class="btn btn-primary btn-lg">INSTAGRAM</a>
+              </div>
+          </div>
+      </section>
+    </main>
+    
+    <footer class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+            <small class="d-block mb-3 text-body-secondary">© 2026</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Características</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Artesanías Hechas a Mano</a></li>
+              <li><a class="link-secondary" href="#">Materiales de Calidad</a></li>
+              <li><a class="link-secondary" href="#">Inspiración en Ghibli</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Piezas Destacadas</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Colección de Productos</a></li>
+              <li><a class="link-secondary" href="#">Totoro Clásico</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Política de Privacidad</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Consentimiento</a></li>
+              <li><a class="link-secondary" href="#">Uso de Datos</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="/frontend/assets/js/script.js"></script>  
+  </body>
+
+</html>

@@ -1,0 +1,274 @@
+/* ==========================================
+   1. VARIABLES Y CONFIGURACIÓN GLOBAL
+   ========================================== */
+:root {
+  --primary-color: #4a7c59;      /* Verde bosque Ghibli */
+  --primary-hover: #3b6346;
+  --accent-color: #d97736;       /* Naranja cálido Calcifer */
+  --bg-overlay: rgba(248, 246, 240, 0.82); /* Fondo suave con transparencia */
+  --card-bg: rgba(255, 255, 255, 0.90);    /* Blanco cristal esmerilado */
+  --text-main: #2b2d42;
+  --text-muted: #555a60;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.15);
+  --radius: 16px;
+  --transition: all 0.3s ease;
+}
+
+/* Reset básico y tipografía */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  margin: 0;
+
+  /* ==========================================
+     CONFIGURACIÓN DE IMAGEN DE FONDO
+     ========================================== */
+  background-image: url('../img/fondo.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-color: #1f2421 !important; /* Color de reserva en caso de carga lenta */
+}
+
+/* ==========================================
+   2. BARRA DE NAVEGACIÓN (NAVBAR)
+   ========================================== */
+.navbar {
+  box-shadow: var(--shadow-sm);
+  background-color: rgba(31, 36, 33, 0.95) !important;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #f8f6f0 !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* ==========================================
+   3. CARRUSEL DE IMÁGENES
+   ========================================== */
+.carousel {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 1.2rem 1.8rem;
+  bottom: 2rem;
+}
+
+.carousel-caption h5 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.carousel-caption p {
+  color: #e0e0e0;
+  margin-bottom: 0;
+}
+
+/* ==========================================
+   4. TARJETAS DE PRODUCTO Y SECCIONES (CARDS)
+   ========================================== */
+.card {
+  border: none !important;
+  border-radius: var(--radius) !important;
+  background-color: var(--card-bg) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-img-top {
+  transition: var(--transition);
+  padding-top: 1rem;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+.card-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Contenedor del banner informativo inferior */
+.bg-body-tertiary {
+  background-color: var(--card-bg) !important;
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================
+   5. BOTONES PERSONALIZADOS
+   ========================================== */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  border-radius: 25px !important;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  transition: var(--transition) !important;
+  box-shadow: 0 2px 5px rgba(74, 124, 89, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(74, 124, 89, 0.4);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  border-radius: 25px !important;
+  font-weight: 600;
+  transition: var(--transition) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+}
+
+/* ==========================================
+   6. FORMULARIO DE CONTACTO (formulario.html)
+   ========================================== */
+.contact-box {
+  background-color: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 2.5rem;
+  max-width: 550px;
+  margin: 3rem auto;
+}
+
+.contact-box h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.field {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.2rem;
+  border: 2px solid rgba(74, 124, 89, 0.2);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.field:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(74, 124, 89, 0.2);
+}
+
+textarea.field {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ==========================================
+   7. VISTA GRID (articulospersonalizados.html)
+   ========================================== */
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenido-card {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.contenido-card h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* ==========================================
+   8. PIE DE PÁGINA (FOOTER)
+   ========================================== */
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(10px);
+  margin-top: 4rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: 3rem 1rem;
+}
+
+footer h5 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+footer a:hover {
+  color: var(--accent-color) !important;
+}
